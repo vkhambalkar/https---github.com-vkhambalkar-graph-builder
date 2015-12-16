@@ -1,0 +1,45 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-touch.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/csv.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/pdfmake.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/vfs_fonts.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script src="http://ui-grid.info/release/ui-grid.js"></script>
+
+    <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid.css" type="text/css">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <!-- NVD 3 -->
+    
+    <script src="lib/bower_components/d3/d3.js"></script>
+    <script src="lib/bower_components/nvd3/build/nv.d3.js"></script> <!-- or use another assembly -->
+    <script src="lib/bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
+    <link rel="stylesheet" href="lib/bower_components/nvd3/build/nv.d3.css">
+  </head>
+  <body ng-controller="appController">
+
+    <div class="container" >
+      
+      <div class="row">
+        
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div ng-include="'templates/template1.html'" >
+        
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+  
+    <script src="app.js"></script>
+    <script src="templates/template-controller/chartCtrl.js"></script>
+  </body>
+</html>

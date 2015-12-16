@@ -1,0 +1,29 @@
+{
+	"template":"template1.html",
+	"components":[
+		{
+			"id":"summary", 
+			"component":"grid",
+			"title":"Summary"
+		},
+		{
+			"id":"panel1", 
+			"component":"chart", 
+			"type":"linechart",
+			"title":"Trend Analysis"
+		},
+		{
+			"id":"panel2", 
+			"component":"chart", 
+			"type":"linechart",
+			"title":"Risk Analysis"
+		},
+		{
+			"id":"panel3", 
+			"component":"chart", 
+			"type":"linechart",
+			"title":"Variance Analysis"
+		}
+
+	]
+}

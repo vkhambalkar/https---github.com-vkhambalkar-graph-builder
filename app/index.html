@@ -1,0 +1,81 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-touch.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/csv.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/pdfmake.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/vfs_fonts.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script src="http://ui-grid.info/release/ui-grid.js"></script>
+
+    <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid.css" type="text/css">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  </head>
+  <body>
+
+  <div class="container">
+    <div class="row">
+      <button type="button" class="btn btn-default">Template 1</button>
+      <button type="button" class="btn btn-default">Template 2</button>
+    </div>
+    <div class="row" ng-controller="loginController" ng-show="false">
+        <div class='col-md-3'></div>
+        <div class="col-md-6">
+            <div class="login-box well" >
+                    <form action="">
+                        <legend>Sign In</legend>
+                        <div class="form-group">
+                            <label for="username-email">E-mail or Username</label>
+                            <input value='' ng-model="user.userName" id="username-email" placeholder="E-mail or Username" type="text" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input id="password" value='' ng-model="user.password" placeholder="Password" type="text" class="form-control" />
+                        </div>
+                        <div class="input-group">
+                          <div class="checkbox">
+                            <label>
+                              <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-default btn-login-submit btn-block m-t-md" value="Login" ng-click="login()"/>
+                        </div>
+                        
+                    </form>
+                
+            </div>
+        </div>
+        <div class='col-md-3'></div>
+    
+    </div>
+    <div class="row">
+      <div class="panel panel-default" ng-controller="MainCtrl" ng-show="showSummaryGrid">
+        <div class="panel-heading">Summary</div>
+        <div class="panel-body">
+          <div >
+            <div id="summaryGrid" ui-grid="gridOptions1" class="grid" ui-grid-selection></div>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default" ng-controller="DrilldownCtrl" ng-show="displayDrilldownGrid">
+        <div class="panel-heading">Drill Down</div>
+        <div class="panel-body">
+          <div >
+            <div id="drillDownGrid" ui-grid="drillDownGridOptions" class="grid" ></div>
+          </div>
+        </div>
+      </div>
+  </div>  
+
+  
+    <script src="app.js"></script>
+    
+  </body>
+</html>

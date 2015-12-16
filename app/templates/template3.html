@@ -1,0 +1,26 @@
+
+      <div class="row">
+        
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+          <div class="panel panel-default" ng-controller="panel1Ctrl">
+              <div class="panel-heading" ng-click="onPanelSelect(panelData)">
+                <h3 class="panel-title">{{panelData.title}}</h3>
+              </div>
+              <div class="panel-body">
+                <nvd3 options="options" data="data" class="with-3d-shadow with-transitions"></nvd3>
+              </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div class="panel panel-default" ng-controller="panel2Ctrl">
+              <div class="panel-heading" ng-click="onPanelSelect(panelData)">
+                <h3 class="panel-title">{{panelData.title}}</h3>
+              </div>
+              <div class="panel-body">
+                <nvd3 options="options" data="data" class="with-3d-shadow with-transitions"></nvd3>
+              </div>
+          </div>
+        </div>
+        
+      </div>
+    

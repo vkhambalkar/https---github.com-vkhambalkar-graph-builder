@@ -1,0 +1,27 @@
+[
+    {
+        "countryCode": "AD",
+        "countryName": "Andorra",
+        "population": "84000"
+    },
+    {
+        "countryCode": "AE",
+        "countryName": "United Arab Emirates",
+        "population": "4975593"
+    },
+    {
+        "countryCode": "AF",
+        "countryName": "Afghanistan",
+        "population": "29121286"
+    },
+    {
+        "countryCode": "AG",
+        "countryName": "Antigua and Barbuda",
+        "population": "86754"
+    },
+    {
+        "countryCode": "AI",
+        "countryName": "Anguilla",
+        "population": "13254"
+    }
+]

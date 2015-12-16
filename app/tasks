@@ -1,0 +1,9 @@
+-load 2 different template
+-add menu to select chart
+-export template
+
+-load the data source with column
+-show multiple data source in dropdown 
+-on dropdown change, show the list of columns
+-select X and Y 
+-apply and refresh chart
